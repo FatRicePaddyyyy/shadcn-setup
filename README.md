@@ -1,21 +1,17 @@
 # react-shadcn-setup
-```
-import './styles/globals.css'
-```
+- ```npx create-react-app my-app --template typescript```で作成したreactのプロジェクトにshadcn/uiをセットアップしていきます
+- コードはセットアップ済みのものです
+- ルートディレクトリで``docker-compose up --build```を実行するとlocalhost:3000でアプリが起動しているのがわかると思います。
 
 ## Tailwindcssのセットアップ
-- 以下のページの通りに実装する。
+- [このページ](https://tailwindcss.com/docs/guides/create-react-app)の通りに実装する。
 - reactのバージョンが19だとエラーが出ることがあるので、18.2.0とかを使用する
-```
-https://tailwindcss.com/docs/guides/create-react-app
-```
+
 
 ## shadcnのセットアップ
-- 以下のページの通りに実装する。
+- [このページ](https://ui.shadcn.com/docs/installation/manual)の通りに実装する。
 - tailwind.config.jsのcontentフィールドには、"./src/**/*.{ts,tsx}"を追加する。このcotentフィールドで指定されたファイルがshadcnの対象ファイルとなる
-```
-https://ui.shadcn.com/docs/installation/manual
-```
+
 
 ## パスエイリアスの利用
 - reactのいろいろな設定ができるツールをinstall
@@ -43,7 +39,7 @@ module.exports = {
 ```
 ## componetsの利用
 - https://ui.shadcn.com/docs/components/button などのページのコンポーネントを実装したいとする。
-- Manualみたいな場所があるので、指示に従い、コードを書く。その際、以下のimport文を書く。
+- Manualみたいな場所があるので、指示に従い、コードを書く。その際、以下のimport文を書く。パスはいい感じに直す。
 ```
 import './styles/globals.css'
 ```
